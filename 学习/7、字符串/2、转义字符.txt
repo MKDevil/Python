@@ -1,0 +1,20 @@
+
+转义字符    意义
+\newline    忽视（连续）
+\\          反斜杠\
+\'          单引号'
+\"          双引号"
+\a          响铃
+\b          倒退
+\f          换页
+\n          新行
+\r          返回
+\t          水平制表符
+\v          垂直制表符
+\N{id}      Unicode数据库ID
+\uhhhh      Unicode 16位的十六进制值
+\uhhhhhhhh  Unicode 32位的十六进制值
+\xhhh       十六进制值
+\ooo        八进制值
+\0          Null（不是字符串结尾）
+\other      不转义（保留）
