@@ -1,7 +1,0 @@
-{
-    "__class__": "Student",
-    "__module__": "__main__",
-    "name": "alice",
-    "age": 12,
-    "sno": 5
-}
