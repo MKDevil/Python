@@ -36,7 +36,7 @@ with shelve.open('fileRes\\shelve\\shelve_dic') as db:
     print('文件读取完毕！')
 
 
-# ----------------------------------------    内置数据    ----------------------------------------
+# ----------------------------------------    自定义类    ----------------------------------------
 class Student(object):
     def __init__(self, name, age, score):
         self.name = name

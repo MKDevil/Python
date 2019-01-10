@@ -31,12 +31,12 @@ print('pickle.loads反序列化后的结果：\n\t', my_decode)
 print('\t反序列化后的数据类型：', type(my_decode))
 
 # dump和load
-with open('fileRes\\pickle.bin', 'wb') as file:
-    print('正在写入文件pickle.bin。。。')
+with open('fileRes\\pickle.pkl', 'wb') as file:
+    print('正在写入文件pickle.pkl。。。')
     pickle.dump(dic_a, file)
     print('文件写入完毕！')
-with open('fileRes\\pickle.bin', 'rb') as file:
-    print('正在读取文件pickle.bin。。。')
+with open('fileRes\\pickle.pkl', 'rb') as file:
+    print('正在读取文件pickle.pkl。。。')
     bin_content = pickle.load(file)
     print('文件读取完毕！内容为：\n\t', bin_content)
 
@@ -60,12 +60,17 @@ my_decode = pickle.loads(my_encode)
 print('pickle.loads反序列化后的结果：\n\t', my_decode)
 print('\t反序列化后的数据类型：', type(my_decode))
 
-# dump和load
-with open('fileRes\\pickle.bin', 'wb') as file:
-    print('正在写入文件pickle.bin。。。')
+# dump和load 写入和读取多个对象
+with open('fileRes\\pickle.pkl', 'rb+') as file:
+    print('正在写入文件pickle.pkl。。。')
     pickle.dump(stu1, file)
+    pickle.dump(dic_a, file)
     print('文件写入完毕！')
-with open('fileRes\\pickle.bin', 'rb') as file:
-    print('正在读取文件pickle.bin。。。')
+with open('fileRes\\pickle.pkl', 'rb') as file:
+    print('正在读取文件pickle.pkl。。。')
     bin_content = pickle.load(file)
+    print(type(bin_content))
     print('文件读取完毕！内容为：\n\t', bin_content.__dict__)
+    bin_content = pickle.load(file)
+    print(type(bin_content))
+    print('文件读取完毕！内容为：\n\t', bin_content)

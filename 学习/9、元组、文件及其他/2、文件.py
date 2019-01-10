@@ -12,13 +12,15 @@ print('-' * 20, '打开文件', '-' * 20)
 # a 追加模式（从文件尾部开始写入）
 # 加 + 读写模式
 # 加 b 二进制模式
+# python中的文件对象自带迭代器，以行为单位进行迭代，可以使用for line in file
+
 
 with open('test.txt', 'w+') as f:
     f.write('hello!\n')
     f.write('goodbye\n')
     f.flush()
-    print(f.readline(), end = '')
-    print(f.readline(), end = '')
+    print(f.readline(), end='')
+    print(f.readline(), end='')
 
 # with open('test.txt', 'w') as f:
 #     f.write('hello test file!\n')
