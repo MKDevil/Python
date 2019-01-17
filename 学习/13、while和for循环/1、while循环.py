@@ -13,4 +13,3 @@ b = 10
 while a < b:
     print(a, end=' ')
     a += 1
-print('\n')
