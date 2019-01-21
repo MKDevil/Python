@@ -8,12 +8,12 @@ with open('test.txt', 'r', encoding='utf-8') as f:
         line = f.readline()
         # if line == '':
         if not line:
-#       当line为空字符串时，其bool值为False，not False即为True，语句的意思为：当line为空字符串时，触发 if 事件
+            # 当line为空字符串时，其bool值为False，not False即为True，语句的意思为：当line为空字符串时，触发 if 事件
             print('文件读取完毕')
             break
         else:
             print(line, end='')
-#           文件中已存在换行符，不用 end='' 的话，输出每行中间会空一行
+            # 文件中已存在换行符，不用 end='' 的话，输出每行中间会空一行
 
 # 方法二，使用 __next__() 方法
 # 如果文件指针已经在最后一行，则会返回 StopIteration 错误
