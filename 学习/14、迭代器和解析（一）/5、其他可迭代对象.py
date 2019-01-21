@@ -112,6 +112,7 @@ class Worker():
         else:
             raise IndexError
 
+
 a = Worker('Mike', 22, 4433)
 while True:
     try:
