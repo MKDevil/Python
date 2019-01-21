@@ -32,21 +32,3 @@ while True:
     except StopIteration:
         break
     print(con)
-
-# 字典的迭代
-# 字典有默认的迭代器，返回的是字典的键
-d = {'a': 1, 'b': 2, 'c': 3}
-# 方法一
-for key in d:
-    print(key, '>>', d[key])
-# 方法二
-for key in d.keys():
-    print(key, '>>', d[key])
-# 方法三
-d_iter = iter(d)
-while True:
-    try:
-        key = next(d_iter)
-    except StopIteration:
-        break
-    print(key, '>>', d[key])
