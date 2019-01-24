@@ -64,10 +64,9 @@ class MoveItem():
         self.coor_y = 0
 
     def move(self, step, direction):
-        print(step, direction)
         if not isinstance(step, int):
             print('步数必须为整数！')
-        elif direction in [1, 2, 3, 4]:
+        elif direction not in [1, 2, 3, 4]:
             print('方向必须为数字！上(1)，下(2)，左(3)，右(4)')
         elif direction == 1:
             self.move_direction = '上'
@@ -91,3 +90,4 @@ class MoveItem():
 
 b = MoveItem()
 b.move(20, 3)
+b.move(18, 2)
