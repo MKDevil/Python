@@ -41,8 +41,7 @@ _这是用单下划线倾斜的文字_
 ### 2.引用一段代码
 使用三个单引号括起来
 
-'''python
-
-for i in range(10):
-    print(i)
+'''Python
+>for i in range(10):
+>>   print(i)
 '''
