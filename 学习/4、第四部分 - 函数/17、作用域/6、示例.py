@@ -86,7 +86,7 @@ class MoveItem():
         self.coor_x = 0
         self.coor_y = 0
 
-    def move(self, step, direction):
+    def __call__(self, step, direction):
         if not isinstance(step, int):
             print('步数必须为整数！')
         elif direction not in [1, 2, 3, 4]:
@@ -112,5 +112,5 @@ class MoveItem():
 
 
 b = MoveItem()
-b.move(20, 3)
-b.move(18, 2)
+b(20, 3)
+b(18, 2)
