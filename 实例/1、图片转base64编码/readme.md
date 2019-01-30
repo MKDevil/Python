@@ -1,3 +1,6 @@
+<style type="text/css">
+    code{color: #C7254E}
+</style>
 # Readme
 
 ## 使用方法
