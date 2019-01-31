@@ -1,5 +1,5 @@
 <style type="text/css">
-    code{color: #C7254E}
+    code{color: #f13d3d}
 </style>
 # Readme
 
