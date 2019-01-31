@@ -1,0 +1,40 @@
+{
+	"bootstrapped": true,
+	"channels":
+	[
+		"c:\\channel_v3.json"
+	],
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Anaconda",
+		"Boxy Theme",
+		"BracketHighlighter",
+		"ChineseLocalizations",
+		"Color Highlight",
+		"ConvertToUTF8",
+		"Git",
+		"Git Commit Message Syntax",
+		"GitGutter",
+		"LiveReload",
+		"MarkdownEditing",
+		"MarkdownPreview",
+		"MarkdownTOC",
+		"Package Control",
+		"PackageResourceViewer",
+		"Print to HTML",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
+		"SublimeREPL",
+		"Table Editor"
+	],
+	"repositories":
+	[
+		"http://sublime.wbond.net/repositories.json",
+		"https://sublime.wbond.net/repositories.json"
+	]
+}
