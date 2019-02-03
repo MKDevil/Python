@@ -1,7 +1,3 @@
-<style type="text/css">
-    code{color: #f13d3d}
-</style>
-
 #Readme
 
 ## 使用方法
