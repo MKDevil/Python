@@ -1,6 +1,3 @@
-<style type="text/css">
-    code{color: #C7254E}
-</style>
 # Markdown 基本语法的学习
 
 [TOC]
