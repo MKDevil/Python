@@ -9,6 +9,3 @@ class BaseClass(object):
         self.name = name
         self.age = age
         self.pay = pay
-
-    def raisePay(self, raisePercent):
-        self.pay *= raisePercent
