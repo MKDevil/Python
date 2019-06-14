@@ -17,13 +17,13 @@ class Set(object):
     def union(self, other):
         res = self.data[:]
         for x in other:
-            if not x in res:
+            if x not in res:
                 res.append(x)
         return Set(res)
 
     def concat(self, value):
         for x in value:
-            if not x in self.data:
+            if x not in self.data:
                 self.data.append(x)
 
     def __len__(self): return len(self.data)
