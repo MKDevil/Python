@@ -21,4 +21,3 @@ def spam(a, b, c):
 spam(1, 2, 3)
 spam('a', 'b', 'c')
 spam(4, 5, 6)
-TODO: 840
