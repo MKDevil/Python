@@ -6,6 +6,9 @@ __pycache__/
 # VS Code 忽略 .vscode 文件夹
 .vscode/
 
+# 忽略自定义的无用文件夹
+.result/
+
 # C extensions
 *.so
 
