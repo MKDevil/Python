@@ -3,8 +3,8 @@
 
 import urllib
 
-appid = '20190323000280309'
-secret_key = 'FE0bKiSX6g8UjZ8tjg0v'
+appid = ''  # ID
+secret_key = ''  # 密码
 api_url = 'https://fanyi-api.baidu.com/api/trans/vip/translate'
 
 

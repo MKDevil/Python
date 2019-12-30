@@ -2,14 +2,14 @@
 # -*- coding:utf-8 -*-
 
 # 创建一个字典
-D1 = {'name': '孟令珂', 'old': 24, 'sex': 'man'}
+D1 = {'name': '渣渣辉', 'old': 24, 'sex': 'man'}
 print(D1)
 print(D1['name'])
 D1['old'] += 1
 print(D1['old'])
 
 # 字典和列表的嵌套,并输出其中的一个数据
-D2 = {'name': ['孟令珂', '续恒州', '张少康'], 'sex': [
+D2 = {'name': ['渣渣辉', '古天乐', '谢霆锋'], 'sex': [
     'man', 'man', 'man'], 'old': [24, 27, 24]}
 print('字典D2的长度为：', len(D2))
 D2['name'].append('测试')
@@ -29,7 +29,7 @@ for key in sorted(D3):
     print(key, '=>', D3[key])
 
 # 检测是否有对应键
-D4 = {'name': ['孟令珂', '续恒州', '张少康'], 'sex': [
+D4 = {'name': ['渣渣辉', '古天乐', '谢霆锋'], 'sex': [
     'man', 'man', 'man'], 'old': [24, 27, 24]}
 key = input('输入你想查找的键：\n')
 if key in D4:

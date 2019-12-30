@@ -26,7 +26,7 @@ def test(name):
 
 
 if __name__ == '__main__':
-    file = r'E:\孟令珂\Python\学习\习题\5、第五部分练习题\mymod.py'
+    file = r'E:\渣渣辉\Python\学习\习题\5、第五部分练习题\mymod.py'
     print(countLines(file))
     print(countChars(file))
     print(test(file))

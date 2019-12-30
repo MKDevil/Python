@@ -5,7 +5,7 @@
 ##############################################################################
 ############################      %方法      ############################
 
-dic = {'name': '孟令珂', 'age': 24, 'sex': 'male'}
+dic = {'name': '渣渣辉', 'age': 24, 'sex': 'male'}
 print('姓名：%(name)s，性别：%(sex)s，年龄：%(age)d' % dic)
 print('姓名：%(name)+10s，性别：%(sex)-10s，年龄：%(age)05d' % dic)
 
@@ -106,10 +106,11 @@ print('分隔符：---{:,}---'.format(789453435.12348654))
 ##########################      更多format实例      ##########################
 print('\n\n更多format实例：\n')
 
-human1 = {'name': '孟令珂', 'sex': '男', 'age': 24, 'work': '事业编', 'pay': 3030}
-print('我叫{name:s}，性别{sex:s}，{age:d}岁，工作是{work:s}，月收入{pay:.2f}'.format(**human1))
+human1 = {'name': '渣渣辉', 'sex': '男',
+          'age': 24, 'work': '学生', 'pay': 99999999}
+print('我系{name:s}，性别{sex:s}，{age:d}岁，是{work:s}，月收入{pay:.2f}'.format(**human1))
 dic = []
 dic.append(human1)
 print(
-    '我叫{name:s}，性别{sex:s}，{age:d}岁，工作是{work:s}，月收入{pay:.2f}'.format(**dic[0]))
+    '我系{name:s}，性别{sex:s}，{age:d}岁，是{work:s}，月收入{pay:.2f}'.format(**dic[0]))
 print('format(**字典、映射)')

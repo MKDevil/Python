@@ -29,7 +29,7 @@ print('-' * 20, '    方法一    ', '-' * 20)
 format_string = '9sfi'
 print("格式化字符串内容为：\t%s\n格式化字符串长度为：\t%s" %
       (format_string, struct.calcsize(format_string)))
-intro_struct_1 = struct.pack(format_string, '孟令珂'.encode(), 24.5, 3000)
+intro_struct_1 = struct.pack(format_string, '渣渣辉'.encode(), 24.5, 3000)
 print('打包完毕！结果为：\t%s\n打包后的数据长度为：\t%s' % (intro_struct_1, len(intro_struct_1)))
 
 # --------------------    方法二、创建一个带格式化字符串的struct对象    --------------------
@@ -38,7 +38,7 @@ print('-' * 20, '    方法二    ', '-' * 20)
 struct_obj = struct.Struct('9sfi')
 print("格式化字符串内容为：\t%s\n格式化字符串长度为：\t%s" %
       (struct_obj.format, struct_obj.size))
-intro_struct_2 = struct_obj.pack('孟令珂'.encode(), 24.5, 3000)
+intro_struct_2 = struct_obj.pack('渣渣辉'.encode(), 24.5, 3000)
 print('打包完毕！结果为：\t%s\n打包后的数据长度为\t%s' % (intro_struct_2, len(intro_struct_2)))
 
 # --------------------    方法三、使用struct.pack_into()方法    --------------------
@@ -48,7 +48,7 @@ print('打包完毕！结果为：\t%s\n打包后的数据长度为\t%s' % (intr
 # 创建可变字符缓冲区，要与pack后的大小一致
 print('-' * 20, '    方法三    ', '-' * 20)
 buff_3 = ctypes.create_string_buffer(struct.calcsize(format_string))
-values = ('孟令珂'.encode(), 24.5, 3000)
+values = ('渣渣辉'.encode(), 24.5, 3000)
 intro_struct_3 = struct.pack_into(format_string, buff_3, 0, *values)
 print('打包完毕！结果为：\t%s' % intro_struct_3)
 print('数据已经存入可变字符串缓冲区中！')

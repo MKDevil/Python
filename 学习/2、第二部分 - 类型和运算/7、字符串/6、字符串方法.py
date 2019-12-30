@@ -116,7 +116,7 @@ print('\n', '-' * 20, '    编码字符串    ', '-' * 20)
 # decode([encoding='utf-8', [errors='strict']])
 # 默认编码模式为 utf-8 ，默认错误处理方案为 strict
 # 在python3中，需要将字符串先转换为bytes格式的，然后编码
-str1 = 'hello world!孟令珂'
+str1 = 'hello world!渣渣辉'
 str2 = str1.encode('utf-8')  # 将str2首先编码成为bytes字符串
 print('%s编码后的结果为：\n\t%s\n\t类型为：\n\t%s'
       % (str1, str2, type(str2)))
