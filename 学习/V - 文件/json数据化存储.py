@@ -10,7 +10,6 @@ import json
 #     print('输入完毕！')
 # fileStatus.isOpen(file)
 
-
 # json提供两个过程，encoding和decoding
 # encoding过程 把python对象转换为json字符串
 # decoding过程 把json字符串转换为python对象
@@ -56,8 +55,15 @@ import json
 # parse_constant 默认值None，如果指定了值，将使用以下字符串之一调用：Nan, Infinity, -Infinity
 #                遇到无效的json符号时，可能会报错
 
-js_ende = {'a': '你好', 'c': True, 'e': 10, 'b': 11.1,
-           'd': None, 'f': [1, 2, 3], 'g': (4, 5, 6)}
+js_ende = {
+    'a': '你好',
+    'c': True,
+    'e': 10,
+    'b': 11.1,
+    'd': None,
+    'f': [1, 2, 3],
+    'g': (4, 5, 6)
+}
 js_en = json.dumps(js_ende, sort_keys=True, indent=4, separators=(',', ':'))
 print('encoding...\n\t', js_en)
 js_de = json.loads(js_en)
@@ -65,10 +71,10 @@ print('decoding...\n\t', js_de)
 print('\t', js_ende)
 print('van全一致！！！')
 
-with open('fileRes\\test.json', 'w') as file:
+with open('test.json', 'w') as file:
     json.dump(js_ende, file)
     print('文件输入完毕')
-with open('fileRes\\test.json', 'r') as file:
+with open('test.json', 'r') as file:
     js_de_file = json.load(file)
     print('文件读取完毕：\n\t', js_de_file)
 
@@ -117,15 +123,15 @@ def dicttoobj(dic):
 
 
 # 序列化 转义后输出到json
-with open('fileRes\\stu.json', 'w') as file:
+with open('stu.json', 'w') as file:
     json.dump(objtodict(st1), file, indent=4)
     print('\nstu.json内容输入完毕！\n\t先转换后输出！\n')
 # 序列化 定义default方法输出到json
-with open('fileRes\\stu.json', 'w') as file:
+with open('stu.json', 'w') as file:
     json.dump(st1, file, indent=4, default=objtodict)
     print('stu.json内容输入完毕！\n\t定义default方法后输出！\n')
 # 反序列化
-with open('fileRes\\stu.json', 'r') as file:
+with open('stu.json', 'r') as file:
     content = json.load(file, object_hook=dicttoobj)
     print('读取完毕，stu.json的内容为：\n\t', content)
     print('获取的数据类型为：\n\t', type(content))
@@ -179,7 +185,7 @@ for chunk in MyJsonEncoder().iterencode(st1):
     print(chunk)
 # 大数据对象序列化网络传输伪代码：
 # for chunk in JSONEncoder().iterencode(bigobject):
-    # mysocket.write(chunk)
+# mysocket.write(chunk)
 
 # ----------------------------------------------------------------------------------------------------
 print('\n\n\n\n--------------------Unicode字符转义：--------------------')
