@@ -1,7 +1,7 @@
 '''
 Author: MK_Devil
 Date: 2022-01-13 11:13:09
-LastEditTime: 2022-01-14 17:33:09
+LastEditTime: 2022-01-14 20:45:21
 LastEditors: MK_Devil
 '''
 #!/usr/bin/env python
@@ -30,12 +30,11 @@ for x in get_sql_data:
         mat_effect.append(x[y])
 print(lib.del_repeat(mat_effect))
 
-json_data = {'mat_name': mat_name, 'mat_effect': mat_effect}
-with open('data.json', 'r+') as data_file:
+json_data = {'material_name': mat_name, 'material_effect': mat_effect}
+with open('data.json', 'w') as data_file:
     json.dump(json_data, data_file)
 with open('data.json', 'r') as data_file:
     json_data = json.load(data_file)
-    print(json_data)
 # 关闭数据库连接
 con.commit()
 con.close()
